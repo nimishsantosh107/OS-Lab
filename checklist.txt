@@ -1,0 +1,21 @@
+1.System Commands 
+2.System Calls and Programs 
+4.Shell Programs 
+8.Banker's Algorithm 
+9.Deadlock Detection 
+10.Memory Allocation Techniques 
+11.Paging Implementation 
+12.Page Replacement Algorithms 
+13.Threading 
+14.File Allocation Techniques 
+15.File Organization Techniques 
+
+
+
+3.Implementation of System Commands (ls, cp, grep) 
+
+
+
+5.Scheduling Algorithms 
+6.Inter-Process Communication 
+7.Producer Consumer Problem using Semaphores 
