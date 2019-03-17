@@ -12,3 +12,5 @@ int fd = open(path , O_WRONLY | O_TRUNC);	-1 on err else FD
 
 while(read(fd , &c , 1))					void - reads fd 1 by 1 to *c till END
 write(fd , &c , 1);							void - writes *c to fd (length 1)
+
+int count = argv[1][1]-'0';					for head/tail

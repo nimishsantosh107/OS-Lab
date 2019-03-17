@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 	// while((d = readdir(p))!=NULL)
 	// 	printf("%s\n",d->d_name);
 
+	//******CP
 	// char a;
 	// int src = open("file.txt",O_RDONLY);
 	// int fd = open("new.txt",O_WRONLY | O_TRUNC);
@@ -46,3 +47,22 @@ int main(int argc, char *argv[])
 	// 	write(fd2 , &a , 1);
 	// close(src);
 	// close(fd);
+
+
+	//******HEAD
+	// char buf;
+	// int limit = argv[1][1]-'0';
+	
+	// int fd = open(argv[2], O_RDONLY);
+	// if(fd == -1) exit(1);
+
+	// int instances = 0;
+	// while(instances < limit) {
+	// 	int status = read(fd , &buf , 1);
+	// 	if(status == 0 || status == -1)
+	// 		exit(1);
+		
+	// 	if(buf == '\n')
+	// 		instances+=1;
+	// 	printf("%c", buf );
+	// }
