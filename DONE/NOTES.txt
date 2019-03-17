@@ -1,0 +1,14 @@
+exit(STATUS)								0 or 1
+
+DIR *p = opendir(".");   					!=NULL
+struct dirent *d = readdir(p);  			!=NULL then NEXT
+
+struct stat fileStat;
+stat(d->d_name, &fileStat)					returns struct of file info
+fileStat.st_mode & S_ISUSR					bitwise & on st_mode(int) and macro
+	
+int fd = creat(path , O_CREAT | 0666);		-1 on err else FD
+int fd = open(path , O_WRONLY | O_TRUNC);	-1 on err else FD
+
+while(read(fd , &c , 1))					void - reads fd 1 by 1 to *c till END
+write(fd , &c , 1);							void - writes *c to fd (length 1)
