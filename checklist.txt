@@ -1,7 +1,7 @@
 1.System Commands 
 2.System Calls and Programs 
 4.Shell Programs 
-8.Banker's Algorithm 
+----
 9.Deadlock Detection 
 10.Memory Allocation Techniques 
 11.Paging Implementation 
@@ -13,6 +13,7 @@
 
 
 3.Implementation of System Commands (ls, cp, grep) 
+8.Banker's Algorithm 
 
 
 

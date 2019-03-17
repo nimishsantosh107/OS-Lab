@@ -51,7 +51,7 @@ int isSafe(int processes[], int avail[], int maxm[][R], int allot[][R])
         { 
             // First check if a process is finished, 
             // if no, go for next condition 
-            if (finish[p] == 0) 
+            if (finish[p] == 0) //******
             { 
                 // Check if for all resources of 
                 // current P need is less 
@@ -78,7 +78,7 @@ int isSafe(int processes[], int avail[], int maxm[][R], int allot[][R])
   
                     found = 1; 
                 } 
-            } 
+            } //*******
         } 
   
         // If we could not find a next process in safe 
