@@ -6,10 +6,9 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 
-//IN ALL FUNCTIONS SAME******* IS PRESENT
+//IN ALL FUNCTIONS ONLY ***DIFF*** CHANGES
 
 void _i(char *argv[]){
-	//SAME*************
 	DIR *p;
 	struct dirent *d;
 	char buf,opt;
@@ -27,7 +26,7 @@ void _i(char *argv[]){
 			r = 1;
 			break;
 		}}
-	//SAME**************
+	//***DIFF***
 	if(r==1){
 		printf("overwrite y/n\n");
 		scanf("%c" , &opt);
@@ -35,19 +34,17 @@ void _i(char *argv[]){
 			exit(1);
 		fd = open(argv[3] , O_WRONLY | O_TRUNC);}
 	else fd = creat(argv[3] , O_CREAT | 0666);
+	//***DIFF***
 
-	//SAME**************
 	//COPY CONTENTS FROM SRC TO DEST
 	while(read(src , &buf , 1))
 		write(fd , &buf , 1);
 
 	close(src);
 	close(fd);
-	//SAME**************
 }
 
 void _f(char *argv[]){
-	//SAME*************
 	DIR *p;
 	struct dirent *d;
 	char buf;
@@ -65,21 +62,19 @@ void _f(char *argv[]){
 			r = 1;
 			break;
 		}}
-	//SAME*************
+	//***DIFF***
 	if(r==1) fd = open(argv[3] , O_WRONLY | O_TRUNC);
 	else fd = creat(argv[3] , O_CREAT | 0666);
+	//***DIFF***
 
-	//SAME*************
 	//COPY CONTENTS FROM SRC TO DEST
 	while(read(src , &buf , 1))
 		write(fd , &buf , 1);
 	close(src);
 	close(fd);
-	//SAME*************
 }
 
 void _n(char *argv[]){
-	//SAME*************
 	DIR *p;
 	struct dirent *d;
 	char buf;
@@ -97,15 +92,17 @@ void _n(char *argv[]){
 			r = 1;
 			break;
 		}}
+
+	//***DIFF***
 	if(r==1) exit(1);
 	else fd = creat(argv[3] , O_CREAT | 0666);
+	//***DIFF***
 
 	//COPY CONTENTS FROM SRC TO DEST
 	while(read(src , &buf , 1))
 		write(fd , &buf , 1);
 	close(src);
 	close(fd);
-	//SAME*************
 }
 
 int main(int argc, char *argv[]){
