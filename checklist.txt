@@ -1,22 +1,22 @@
-1.System Commands 
-2.System Calls and Programs 
-4.Shell Programs 
-----
-9.Deadlock Detection 
-10.Memory Allocation Techniques 
-11.Paging Implementation 
-12.Page Replacement Algorithms 
+-----
+6.Inter-Process Communication 
+8.Banker's Algorithm -              resources request
 13.Threading 
+
+
+
+
+
+-----
+1.System Commands
+2.System Calls and Programs 
+3.Implementation of System Commands 		(ls ,cp ,head ,tail ,nc ,wc ) grep 
+4.Shell Programs
+5.Scheduling Algorithms 
+7.Producer Consumer Problem using Semaphores 
+9.Deadlock Detection 
+10.Memory Allocation Techniques - 			use linked lists
+11.Paging Implementation 
+12.Page Replacement Algorithms - 			linked lists
 14.File Allocation Techniques 
 15.File Organization Techniques 
-
-
-
-3.Implementation of System Commands (ls, cp, grep) 
-8.Banker's Algorithm 
-
-
-
-5.Scheduling Algorithms 
-6.Inter-Process Communication 
-7.Producer Consumer Problem using Semaphores 

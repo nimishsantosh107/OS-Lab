@@ -14,3 +14,24 @@ while(read(fd , &c , 1))					void - reads fd 1 by 1 to *c till END
 write(fd , &c , 1);							void - writes *c to fd (length 1)
 
 int count = argv[1][1]-'0';					for head/tail
+
+
+
+
+int id = shmget(101 , 10 , IPC_CREAT | 00666);
+*a = shmat(id,NULL,0);
+shmdt(a);
+shmctl(id , IPC_RMID , NULL);
+
+
+
+int globalvar;
+void* run(void* param){
+	int a = atoi(param);
+	return NULL
+}
+pthread_t thread;
+pthread_attr_t attr;
+pthread_attr_init(&attr);
+pthread_create(&thread,&attr,run,argv[1]);
+pthread_join(thread,NULL);

@@ -5,11 +5,24 @@
 #include<unistd.h>
 #include<fcntl.h>
 #include<sys/stat.h>
+#include<pthread.h>
 
+int glb;
+void* run(void* arg){
+	int a = atoi(arg);
+	glb = a*5;
+	return NULL;
+}
 
 int main(int argc, char *argv[])
 {
-	exit(0);
+	pthread_t thread;
+	pthread_attr_t attr;
+	pthread_attr_init(&attr);
+	pthread_create(&thread,&attr,run,argv[1]);
+	pthread_join(thread,NULL);
+	printf("%d\n", glb );
+	return 0;
 }
 
 	// //ARG LEN CHECK
