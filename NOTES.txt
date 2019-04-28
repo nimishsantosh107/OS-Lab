@@ -17,7 +17,7 @@ int count = argv[1][1]-'0';					for head/tail
 
 
 
-
+ 
 int id = shmget(101 , 10 , IPC_CREAT | 00666);
 *a = shmat(id,NULL,0);
 shmdt(a);

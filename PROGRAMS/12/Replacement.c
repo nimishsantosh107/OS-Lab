@@ -8,6 +8,7 @@ struct node {
 typedef struct node Node;
 Node *current = NULL;
 Node *prev = NULL;
+
 Node* enq(Node *head, int data)
 {
     Node *link = (Node*)malloc(sizeof(Node));
@@ -278,3 +279,16 @@ int main()
     }while(choice != 6);
     return 0;
 }
+
+
+
+// enq
+// deq
+// delete
+// findSize
+// search
+
+// store
+// max
+// min
+// linsearch
