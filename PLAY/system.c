@@ -9,9 +9,11 @@
 
 int main(int argc, char const *argv[])
 {
-	char f[30]="hi";
+	char f[10]="hi";
 	printf("%s\n", f);
-	strcpy(f,"b");
+	strcpy(f,"");
+	printf("%s\n", f);
+	strcpy(f,"lolololo");
 	printf("%s\n", f);
 
 
