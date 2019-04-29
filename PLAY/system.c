@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 {
 	char f[30]="hi";
 	printf("%s\n", f);
-	strcpy(f,"a");
+	strcpy(f,"b");
 	printf("%s\n", f);
 
 
