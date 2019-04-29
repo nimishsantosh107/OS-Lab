@@ -18,7 +18,7 @@ int count = argv[1][1]-'0';					for head/tail
 
 
  
-int id = shmget(101 , 10 , IPC_CREAT | 00666);
+int id = shmget(101 , 10 , IPC_CREAT | 0666);
 *a = shmat(id,NULL,0);
 shmdt(a);
 shmctl(id , IPC_RMID , NULL);
@@ -35,3 +35,12 @@ pthread_attr_t attr;
 pthread_attr_init(&attr);
 pthread_create(&thread,&attr,run,argv[1]);
 pthread_join(thread,NULL);
+
+
+
+sem_t *sem;
+sem = sem_open("name" , O_CREAT | O_EXCL, 0666 , value(bin or count));
+sem_unlink("name");
+sem_wait(sem);
+sem_post(sem);
+sem_destroy(sem);
