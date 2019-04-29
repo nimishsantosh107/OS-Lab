@@ -15,7 +15,7 @@ void _i(char *argv[]){
 	int r=0,fd;
 	//DIR OPEN CHECK
 	if((p = opendir(".")) == NULL)exit(1);
-
+		
 	//SRC CHECK
 	int src = open(argv[2],O_RDONLY);
 	if(src==-1) exit(1);
