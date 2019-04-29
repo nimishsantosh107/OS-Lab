@@ -2,9 +2,13 @@
 6.Inter-Process Communication 
 8.Banker's Algorithm -              		resources request
 10.Memory Allocation Techniques - 			use array
+11.Paging Implementation
 12.Page Replacement Algorithms - 			linked lists
-13.Threading 
+13.Threading
 
+
+
+14.File Allocation Techniques				--concept
 
 
 
@@ -15,10 +19,7 @@
 3.Implementation of System Commands 		(ls ,cp ,head ,tail ,nc ,wc ) grep 
 4.Shell Programs
 
-5.Scheduling Algorithms 
-7.Producer Consumer Problem using Semaphores 
-9.Deadlock Detection 
-
-11.Paging Implementation 
-14.File Allocation Techniques
+5.Scheduling Algorithms
+7.Producer Consumer Problem using Semaphores
+9.Deadlock Detection
 15.File Organization Techniques
