@@ -7,6 +7,7 @@ struct stat fileStat;
 stat(d->d_name, &fileStat)					returns struct of file info
 fileStat.st_mode & S_ISUSR					bitwise & on st_mode(int) and macro
 	
+int src = open(path , O_RDONLY);
 int fd = creat(path , O_CREAT | 0666);		-1 on err else FD
 int fd = open(path , O_WRONLY | O_TRUNC);	-1 on err else FD
 
