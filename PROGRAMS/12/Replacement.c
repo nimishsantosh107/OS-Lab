@@ -1,5 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
+// enq
+// deq
+// delete
+// findSize
+// search
+
+// store
+// max
+// min
+// linsearch
+
 #define MAXSIZE 20
 struct node {
     int data;
@@ -282,13 +293,3 @@ int main()
 
 
 
-// enq
-// deq
-// delete
-// findSize
-// search
-
-// store
-// max
-// min
-// linsearch
